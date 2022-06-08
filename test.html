@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes auto_change_color {
+        from {
+          filter: hue-rotate(0);
+        }
+        to {
+          filter: hue-rotate(360deg);
+        }
+      }
+      .container {
+        background-image: url('./staticImage.png');
+        background-size: auto 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        animation: auto_change_color 6s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
